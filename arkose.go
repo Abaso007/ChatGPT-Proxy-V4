@@ -13,7 +13,7 @@ type arkose_response struct {
 }
 
 func get_arkose_token() (string, error) {
-	resp, err := client.Get("http://127.0.0.1:3000/api/arkose")
+	resp, err := client.Get("http://bypass.churchless.tech/api/arkose")
 	if err != nil {
 		return "", err
 	}
